@@ -16,6 +16,6 @@ Example ↓
 
     ./skunk.sh target.com
 
-NOTE: USE THIS TOOL ONLY INSIDE THE SKUNK-RECON DIRECTORY!
+**NOTE: USE THIS TOOL ONLY INSIDE THE SKUNK-RECON DIRECTORY!**
 
     git clone https://github.com/Lookey-dev/skunk-recon/
