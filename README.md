@@ -17,6 +17,6 @@ Example ↓
 
     ./skunk.sh target.com
 
-Scan results are stored in text files!
+Scan results are stored in text files...
 
 **NOTE: USE THIS TOOL ONLY INSIDE THE SKUNK-RECON DIRECTORY!**
