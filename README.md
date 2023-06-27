@@ -13,10 +13,10 @@ Installer utilized for dependencies solution, which are: **golang, subfinder, al
     
 ## Usage
 
-Scan results are stored in text files!
-
 Example ↓
 
     ./skunk.sh target.com
+
+Scan results are stored in text files!
 
 **NOTE: USE THIS TOOL ONLY INSIDE THE SKUNK-RECON DIRECTORY!**
