@@ -12,4 +12,6 @@ Installer utilized for dependencies solution, which are: **subfinder, alterx, as
 
 Scan results are stored in text files!
 
+Example ↓
+
     ./skunk.sh target.com
