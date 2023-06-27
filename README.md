@@ -8,7 +8,7 @@ Installer utilized for dependencies solution, which are: **subfinder, alterx, as
 
     chmod +x installer.sh && sudo ./installer.sh
     
-# Usage
+## Usage
 
 Scan results are stored in text files!
 
