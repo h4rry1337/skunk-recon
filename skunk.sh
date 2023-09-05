@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo '
-	    x            )
+            x            )
            / \        (  ) (
           / X \        )    )
          _______      (  ( (
@@ -9,10 +9,10 @@ echo '
 (_______________________)
           L00k3y
 
-from maconheiros to maconheiros
-  !SKUNKS ALSO USE INTERNET!'
+     DINHEIRO COM SITE
+       !SKUNKS 4FUN!'
 target=$1
-subfinder -d $target -o subfinder.txt -silent | alterx -en -silent 1>/dev/null
+subfinder -d $target -o subfinder.txt -silent | alterx -enrich -silent 1>/dev/null
 assetfinder --subs-only $target >> assetfinder.txt 1>/dev/null
 findomain -t $target -u findomain.txt 1>/dev/null
 sort -u subfinder.txt assetfinder.txt findomain.txt >> subs.txt
