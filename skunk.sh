@@ -23,4 +23,5 @@ puredns resolve -r resolvers.txt  permutations.txt -w subs.txt 1>/dev/null
 httpx -l subs.txt -retries 2 -threads 100 -o httpx.txt -silent 1>/dev/null
 nuclei -l httpx.txt -nh -s info,low,medium,high,critical,unknown -o nuclei-subdomains.txt
 nuclei -u $target -s info,low,medium,high,critical,unknown -o nuclei-domain.txt
+cat nuclei-subdomains.txt nuclei-domain.txt | grep wordpress | awk '{print $4}' >> wordpresses.txt
 rm subfinder.txt assetfinder.txt findomain.txt permutations1.txt permutations2.txt
