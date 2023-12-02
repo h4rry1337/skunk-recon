@@ -29,11 +29,9 @@ sudo mv mksub-1.1.1-linux-amd64 /usr/bin/
 rm mksub-1.1.1-linux-amd64.zip
 wget https://github.com/Josue87/gotator/archive/refs/tags/v1.1.zip
 unzip v1.1.zip
-wget https://github.com/Josue87/gotator/archive/refs/tags/v1.1.zip
-cd gotator-1.1
-go build
-sudo mv gotator /usr/bin/
+cd gotator-1.1; go build
 cd ..
+sudo mv gotator /usr/bin/
 rm v1.1.zip
 rm -rf gotator-1.1
 wget https://github.com/d3mondev/puredns/releases/download/v2.1.1/puredns-Linux-amd64.tgz
