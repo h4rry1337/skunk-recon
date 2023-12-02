@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-mkdir ~/skunk-recon
 cd ~/skunk-recon
 wget https://gist.githubusercontent.com/six2dez/ffc2b14d283e8f8eff6ac83e20a3c4b4/raw
 mv raw wordlist.txt
@@ -41,6 +40,10 @@ wget https://github.com/d3mondev/puredns/releases/download/v2.1.1/puredns-Linux-
 tar -xvzf puredns-Linux-amd64.tgz
 mv puredns /usr/bin/
 rm puredns-Linux-amd64.tgz
+wget https://github.com/blechschmidt/massdns/archive/refs/tags/v1.0.0.zip
+unzip v1.0.0.zip
+mv massdns-1.0.0 /usr/bin/
+rm v1.0.0.zip
 wget https://github.com/projectdiscovery/httpx/releases/download/v1.3.3/httpx_1.3.3_linux_amd64.zip
 unzip httpx_1.3.3_linux_amd64.zip
 mv httpx /usr/bin/
