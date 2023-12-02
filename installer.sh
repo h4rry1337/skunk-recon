@@ -28,7 +28,7 @@ unzip mksub-1.1.1-linux-amd64.zip
 sudo mv mksub-1.1.1-linux-amd64 /usr/bin/
 rm mksub-1.1.1-linux-amd64.zip
 wget https://github.com/Josue87/gotator/archive/refs/tags/v1.1.zip
-unzip v1.1.zip
+unzip gotator-1.1.zip
 cd gotator-1.1; go build
 cd ..
 sudo mv gotator /usr/bin/
