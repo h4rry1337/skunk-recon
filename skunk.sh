@@ -12,7 +12,7 @@ echo '
      DINHEIRO COM SITE
        !SKUNKS 4FUN!'
 target=$1
-subfinder -d $target -o subfinder.txt -silent | alterx -enrich -silent 1>/dev/null
+subfinder -d $target -silent | alterx -enrich -silent > subfinder.txt
 assetfinder --subs-only $target >> assetfinder.txt 1>/dev/null
 findomain -t $target -u findomain.txt 1>/dev/null
 sort -u subfinder.txt assetfinder.txt findomain.txt >> subs.txt
