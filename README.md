@@ -7,7 +7,7 @@
     
 ## ./installer.sh
 
-Installer utilized for dependencies solution, which are: **golang, subfinder, alterx, assetfinder, findomain, mksub, gotator, puredns, httpx and nuclei.**
+Installer utilized for dependencies solution, which are: **golang, subfinder, alterx, assetfinder, findomain, mksub, gotator, puredns, httpx, katana, godeclutter and nuclei.**
 
     chmod +x installer.sh && sudo ./installer.sh
     
