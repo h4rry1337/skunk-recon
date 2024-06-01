@@ -14,10 +14,10 @@ subfinder -d $target -silent | alterx -enrich -silent > subfinder.out
 assetfinder --subs-only $target >> assetfinder.out 1>/dev/null
 findomain -t $target -u findomain.out 1>/dev/null
 sort -u subfinder.out assetfinder.out findomain.out >> subs.out
-mksub -df subs.out -l 1 -w ~/skunk-recon/wordlist.txt -r "^[a-zA-Z0-9\.-_]+$" -o permutations1.out 1>/dev/null
-gotator -sub subs.out -perm ~/skunk-recon/wordlist.txt -depth 1 -numbers 10 -mindup -adv -md > permutations2.out 1>/dev/null
+mksub -df subs.out -l 1 -w /usr/share/skunk-recon/wordlist.txt -r "^[a-zA-Z0-9\.-_]+$" -o permutations1.out 1>/dev/null
+gotator -sub subs.out -perm /usr/share/skunk-recon/wordlist.txt -depth 1 -numbers 10 -mindup -adv -md > permutations2.out 1>/dev/null
 cat permutations1.out permutations2.out | sort -u >> permutations.out
-puredns resolve -r resolvers.txt  permutations.out -w subs.out 1>/dev/null
+puredns resolve -r /usr/share/skunk-recon/resolvers.txt permutations.out -w subs.out 1>/dev/null
 httpx -l subs.out -retries 2 -threads 100 -o httpx.out -silent 1>/dev/null
 nuclei -l httpx.out -nh -s info,low,medium,high,critical,unknown -o nuclei-subdomains.out
 nuclei -u $target -s info,low,medium,high,critical,unknown -o nuclei-domain.out
