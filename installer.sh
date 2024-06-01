@@ -2,7 +2,6 @@
 cd ~/skunk-recon
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 pdtm -install-all
-go install github.com/c3l3si4n/godeclutter@HEAD
 wget https://gist.githubusercontent.com/six2dez/ffc2b14d283e8f8eff6ac83e20a3c4b4/raw -O wordlist.txt
 curl https://raw.githubusercontent.com/trickest/resolvers/main/resolvers.txt -O
 wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
