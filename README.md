@@ -7,7 +7,7 @@
     
 ## ./installer.sh
 
-Installer utilized for dependencies solution, which are: **golang, subfinder, alterx, assetfinder, findomain, mksub, gotator, puredns, httpx, katana, godeclutter and nuclei.**
+Installer utilized for dependencies solution, which are: **golang, pdtm, subfinder, alterx, assetfinder, findomain, mksub, gotator, puredns, httpx, katana and nuclei.**
 
     chmod +x installer.sh && sudo ./installer.sh
     
@@ -18,5 +18,3 @@ Example ↓
     ./skunk.sh target.com
 
 Scan results are stored in text files...
-
-**NOTE: USE THIS TOOL ONLY INSIDE THE SKUNK-RECON DIRECTORY!**
