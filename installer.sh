@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-cd ~/skunk-recon
+mv ~/skunk-recon /usr/share/skunk-recon
+mv /usr/share/skunk-recon/skunk.sh /bin/skunk.sh
+chmod +x /bin/skunk.sh
+cd /usr/share/skunk-recon
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
-pdtm -install-all
-wget https://gist.githubusercontent.com/six2dez/ffc2b14d283e8f8eff6ac83e20a3c4b4/raw -O wordlist.txt
+./pdtm -install-all
+wget https://gist.githubusercontent.com/six2dez/ffc2b14d283e8f8eff6ac83e20a3c4b4/raw -O /wordlist.txt
 curl https://raw.githubusercontent.com/trickest/resolvers/main/resolvers.txt -O
 wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
 tar -xzf assetfinder-linux-amd64-0.1.1.tgz
