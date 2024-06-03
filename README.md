@@ -7,7 +7,7 @@
     
 ## ./installer.sh
 
-Installer utilized for dependencies solution, which are: **golang, pdtm, subfinder, alterx, assetfinder, findomain, mksub, gotator, puredns, httpx, katana and nuclei.**
+First, you need to run installer, witch will install all necessary dependencies. **(golang, pdtm, subfinder, alterx, assetfinder, findomain, mksub, gotator, puredns, httpx, katana and nuclei.)**
 
     chmod +x installer.sh && sudo ./installer.sh
     
