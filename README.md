@@ -3,7 +3,7 @@
     Tool made for stoners pentesters, to take advantage of their skunk while performing their reconnaissance in an automated way.
 
 ## Install 4 Unix
-    git clone https://github.com/Lookey-dev/skunk-recon/
+    git clone https://github.com/h4rry1337/skunk-recon/
     
 ## ./installer.sh
 
